@@ -1,0 +1,11 @@
+create table login(Emailid varchar(50),pass varchar(50));
+select *from createaccnt;
+select *from login;
+alter table login drop uname;
+create table createaccnt( userid int   auto_increment primary key  ,uname varchar(50),pass varchar(50),EmailId varchar(50)  not null unique, Org varchar(50));
+create table otpreg(email varchar(20));
+drop table otpreg;
+CREATE INDEX index1 ON createaccnt (Emailid,pass);
+CREATE INDEX index1 ON login (Emailid,pass);
+select EmailId from createaccnt ;
+drop INDEX index1 on createaccnt;

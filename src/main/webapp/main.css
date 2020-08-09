@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* the whole container */
+#alphabet {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    box-sizing: border-box;
+    border: solid black 1px;
+}
+
+/* a single row */
+#alphabet div {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    width: 100%;
+    background: gray;
+    margin: 0px;
+}
+
+/* individual entry */
+#alphabet div button {
+    flex-grow: 1;
+    flex-basis: 2em;
+    border: none;
+    background: #D32F2F;
+    color: #fff;
+    font-size: 5vh;
+    height: 100%;
+}
+
+#alphabet div button:hover {
+    background: #F44336;
+}
